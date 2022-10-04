@@ -1,0 +1,113 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+.row__nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: baseline;
+}
+
+.container__nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fa-solid { 
+    color: #FFFFFF;
+}
+
+.name {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    letter-spacing: -0.25px;
+    color: #ffffff;
+}
+
+.link {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 140% */
+    color: #FFFFFF;
+}
+
+.flex__header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 1%;
+}
+
+.container__header {
+    width: 574px;
+    height: 198px;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 84px;
+    line-height: 102px;
+    /* identical to box height, or 121% */
+    letter-spacing: -2px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title__text {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    /* or 155% */
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.container__img {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.image {
+    width: 864px;
+    height: 486px;
+}
+
+@media screen and (max-width: 1440px) {
+    .image {
+        width: 864px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        width: 617px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .image { width: 256px;
+    }
+}
