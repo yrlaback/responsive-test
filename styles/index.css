@@ -5,25 +5,50 @@ body {
     background-color: black;
 }
 
-.row__nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 1;
-    align-items: baseline;
+.navbar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 60px;
+    list-style: none;
 }
 
-.container__nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	max-width: 1440px;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.fa-solid { 
-    color: #FFFFFF;
+.left-container,
+.right-container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 300px;
 }
 
-.name {
+.left-container {
+	justify-content: flex-start;
+}
+
+.right-container {
+	justify-content: flex-end;
+}
+
+.nav-left,
+.nav-right {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	flex-basis: 300px;
+	align-items: center;
+	color: #fff;
+}
+
+.nav-name {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
