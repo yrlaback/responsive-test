@@ -99,10 +99,6 @@ body {
         display:block;
     }
 
-    .hamburger.active {
-        
-    }
-
     .nav-right {
         position: fixed;
         left: -100%;
