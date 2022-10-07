@@ -27,8 +27,9 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    .nav-right {
-        visibility: hidden;
+    .navbar {
+        overflow: hidden;
+        background-color: black;
     }
 }
 
@@ -75,6 +76,48 @@ body {
 
 .nav-name:hover, .link:hover {
     color: grey;
+    transition: 0.7s ease;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 668px) {
+    .hamburger {
+        display:block;
+    }
+
+    .hamburger.active {
+        
+    }
+
+    .nav-right {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column; 
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-right.active{
+        left: 0;
+    }
 }
 
 .flex-header {
